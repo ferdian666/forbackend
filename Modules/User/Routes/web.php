@@ -15,4 +15,4 @@ Route::prefix('user')->group(function() {
     Route::get('/', 'UserController@index');
 });
 
-Route::get('/user','UserController@index');
+Route::get('/user','UserController@index')->name('user.index');
